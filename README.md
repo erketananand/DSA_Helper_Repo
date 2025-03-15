@@ -22,7 +22,7 @@ class Queue {
         return item;
     }
 
-    peek() {
+    front() {
         return this.elements[this.head];
     }
 
@@ -52,7 +52,7 @@ class PriorityQueue {
         return this.size() === 0;
     }
 
-    peek() {
+    front() {
         return this.heap[0];
     }
 
@@ -149,7 +149,7 @@ class Queue<T> {
         return item;
     }
 
-    peek(): T | undefined {
+    front(): T | undefined {
         return this.elements[this.head];
     }
 
@@ -188,7 +188,7 @@ class PriorityQueue<T> {
         return this.size() === 0;
     }
 
-    peek(): T | undefined {
+    front(): T | undefined {
         return this.heap[0];
     }
 
